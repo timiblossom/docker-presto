@@ -20,14 +20,17 @@ Run image:
 Once inside a container of this image, run the following to start Presto:
 
 ```
-/configure.sh
+  /configure.sh
 ```
 
 You can see what URL and PORT is being used by Presto this way:
 
 ```
-./what-is-ui-url.sh
+  ./what-is-ui-url.sh
 ```
+
+Run shell Presto client:
+  ./presto --server <docker-ip>:8080 --catalog localfile 
 
 # Important Note
 
