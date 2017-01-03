@@ -1,9 +1,16 @@
-docker-presto
-==============
+# Docker for Presto
 
+## Introduction
 
-This project containerizes Presto, forked from https://github.com/medined/docker-presto.git. 
-See http://prestodb.io/ for more information.
+This project can help to build a Docker image for Presto, forked from https://github.com/medined/docker-presto.git. 
+See http://prestodb.io/ for more information.  Currently, it only supports local file connection.
+
+## Getting it
+
+### Downloading 
+  https://hub.docker.com/r/timiblossom/presto-local-file/
+
+### Building
 
 ```
 Prerequisite:
@@ -29,13 +36,9 @@ You can see what URL and PORT is being used by Presto this way:
   ./what-is-ui-url.sh
 ```
 
-Run shell Presto client:
+## Accessing with Presto client:
   ./presto --server <docker-ip>:8080 --catalog localfile 
    
-  then,
   presto> use logs;
   presto:logs> select count(*) from http_request_log;
 
-# Important Note
-
-This demonstrates Presto's localfile connector
