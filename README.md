@@ -37,8 +37,10 @@ You can see what URL and PORT is being used by Presto this way:
 ```
 
 ## Accessing with Presto client:
+```
   ./presto --server <docker-ip>:8080 --catalog localfile 
    
   presto> use logs;
   presto:logs> select count(*) from http_request_log;
+```
 
