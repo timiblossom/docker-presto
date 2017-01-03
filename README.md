@@ -13,8 +13,8 @@ See http://prestodb.io/ for more information.  Currently, it only supports local
 ### Building
 
 ```
-Prerequisite:
-
+git clone https://github.com/timiblossom/docker-presto
+cd docker-presto
 wget http://central.maven.org/maven2/com/facebook/presto/presto-server/0.161/presto-server-0.161.tar.gz
 
 Build image:
